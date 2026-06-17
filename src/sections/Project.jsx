@@ -10,17 +10,17 @@ const projects = [
       "A full-stack AI-powered resume builder that helps users create ATS-friendly resumes with AI-generated summaries and job descriptions.",
     image: "/projects/proresume.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Gemini API"],
-    link: "#",
-    github: "#",
+    link: "https://pro-resume-ai.onrender.com/",
+    github: "https://github.com/parmanand-ray/resume-builder",
   },
   {
     title: "WanderLust - Room Renting Platform",
     description:
       "A full-stack room rental platform with authentication, CRUD operations, image uploads, and scalable MVC architecture.",
-    image: "/projects/wanderlust.png",
+    image: "/projects/wanderlust.jpg",
     tags: ["Node.js", "Express.js", "MongoDB", "EJS", "MVC", "Cloudinary"],
-    link: "#",
-    github: "#",
+    link: "https://wonderlust-jq4y.onrender.com/",
+    github: "https://github.com/parmanand-ray/wonderLust",
   },
   {
     title: "AI Chatbot Web Application",
@@ -35,8 +35,8 @@ const projects = [
       "REST API",
       "Gemini API",
     ],
-    link: "#",
-    github: "#",
+    link: "https://ai-chat-bot-y6lj.onrender.com/",
+    github: "https://github.com/parmanand-ray/Ai-chat",
   },
 ];
 const Project = () => {
@@ -83,6 +83,8 @@ const Project = () => {
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-2 glass rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     {" "}
@@ -90,6 +92,8 @@ const Project = () => {
                   </a>
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-2 glass rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <FaGithub className="w-5 h-5" />
@@ -99,9 +103,14 @@ const Project = () => {
               {/* Contents */}
               <div className="p-6 space-y-6 ">
                 <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl font-semibold group-hover:text-primary transition-colors"
+                  >
                     {project.title}
-                  </h3>
+                  </a>
                   <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
                 </div>
                 <p className="text-muted-foreground text-sm">
@@ -123,10 +132,16 @@ const Project = () => {
         </div>
         {/* view all cta */}
         <div className="text-center mt-12 animate-fade-in animate-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+          <a
+            href="https://github.com/parmanand-ray/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              View All Projects
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>
