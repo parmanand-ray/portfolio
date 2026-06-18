@@ -88,14 +88,14 @@ const Hero = () => {
           {/* Left Column Text Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[13px] glass md:text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
                 Software Developer • MERN Stack Developer
               </span>
             </div>
             {/* heading */}
             <div className="space-y-4 ">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animate-delay-100">
+              <h1 className="text-4xl  md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animate-delay-100">
                 Building
                 <span className="text-primary glow-text"> full-stack</span>
                 <br />
@@ -105,7 +105,7 @@ const Hero = () => {
                   modern solutions.
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animate-delay-200">
+              <p className="text-sm md:text-lg text-muted-foreground max-w-lg animate-fade-in animate-delay-200">
                 Full Stack Web Developer skilled in MERN stack, building
                 responsive applications, REST APIs, authentication systems, and
                 AI-integrated solutions with modern web technologies.

@@ -15,6 +15,10 @@ const navLinks = [
     href: "#experience",
     label: "Experience",
   },
+   {
+    href: "#educations",
+    label: "Education",
+  },
   {
     href: "#testimonials",
     label: "Testimonials",
@@ -69,7 +73,12 @@ const Navbar = () => {
         </div>
         {/* CTA button */}
         <div className=" hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button
+            size="sm"
+            onClick={() => document.getElementById("contact").scrollIntoView()}
+          >
+            Contact Me
+          </Button>
         </div>
 
         {/* mobile nav btn */}
@@ -94,7 +103,15 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button onClick={() => setIsMobileMenuOpen(false)} size="sm">
+            <Button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              size="sm"
+            >
               Contact Me
             </Button>
           </div>
